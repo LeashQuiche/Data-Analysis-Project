@@ -23,6 +23,11 @@ to return the distance between the two points.
 createTestCase function creates two random test cases (hemoglobin and glucose) from 0-1 and
 creates/returns a new 1D array with the two points.
 
+nearestNeighbor function takes in a 2D array of cartesian points and a randomly generated test case.
+Returns the index of the closest point in the 2D array to the test case.
+Method 1: Use indices and the distance function to create an array of points and return the index of the closest point.
+Method 2: Use KDTree
+
 graphNearestNeighbor void function takes in a 2D numpy array (and a cartesian 
 coordinate depending on createTestCase) and 
 graphs the first column (hemoglobin) as the x-axis and the second column (glucose) as the y-axis.
@@ -40,9 +45,13 @@ Create n number of random test cases and determine whether the case is likely to
 
 # K Nearest Nearest Neighbor Classifier Functions Descriptions:
 
-findDistanceArray inputs a numpy array, a random point, and an integer k and
-uses the findDistance function from NearestNeighborClassifier. 
-The function outputs a 1D array containing the k number of nearst points to the random test case.
+kNearestNeighbor function inputs a numpy array, a random point, and an integer k and 
+returns an array of length k which holds the indices of the k number of nearest points to the test case.
+Method 1: Use the findDistance function from NearestNeighborClassifier. 
+Method 2: Use a KD Tree
+
+kNNClass function takes in an 2 arrays. One of the data and the other is a list of indices.
+Can use various statistical calculations to find the value of the most common class and return that class.
 
 graphKNearestNeighbor void function takes in two 1D and one 2D numpy arrays to graph.
 One of the 1D arrays is a random testCase with its own distinct points.
@@ -73,7 +82,8 @@ There are k number of rows representing the number of centroids and the classifi
 OR you can have a third column with the classification value.
 
 assignCentroids function takes in an array of normalized x (hemoglobin) and y (glucose) values from the CSV file and the randomly generated array of centroids from randomCentroids. 
-Using the findDistance function from NearestNeighborClassifier, points are assigned the same classification as the nearest centroid.
+Method 1: Use shape/KD tree to determine closest point to each centroid.
+Method 2: Using the findDistance function from  NearestNeighborClassifier, points are assigned the same classification as the nearest centroid.
 A 2D array of the normalized data and its classification are returned.
 
 updateCentroids function inputs the 2D array of centroid locations and of classified and normalized CSV data.
