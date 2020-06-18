@@ -1,4 +1,4 @@
-# Summer-2020-ML-Project
+# Summer-2020-Data-Analysis-Project
 
 # Nearest Neighbor Classifier Script Description:
 Process and graph a CSV file containing biomedical data that relates hemoglobin levels, glucose levels, and chronic kidney disease (CKD).
