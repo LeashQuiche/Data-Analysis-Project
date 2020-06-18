@@ -1,6 +1,7 @@
 # Summer-2020-Data-Analysis-Project
 
-# Nearest Neighbor Classifier Script Description: Use this to brush up on Python syntax (I reccomend Google).
+# Nearest Neighbor Classifier Script Description:
+# Use this to brush up on Python syntax (I reccomend Google).
 
 Process and graph a CSV file containing biomedical data that relates hemoglobin levels, glucose levels, and chronic kidney disease (CKD).
 Create n number of random test cases and determine whether the case is likely to have CKD depending on the classification of the nearest point.
@@ -40,7 +41,8 @@ A legend is generated in a reasonable position.
 mainDriver function takes in no inputs and graphs both the orginial CSV file and the test case. 
 This function returns 0.
 
-# K Nearest Nearest Neighbor Classifier Script Description: Try to figure out how to do this before looking at instructions.
+# K Nearest Nearest Neighbor Classifier Script Description:
+# Try to figure out how to do this before looking at instructions.
 
 Process and graph a CSV file containing biomedical data that relates hemoglobin levels, glucose levels, and chronic kidney disease (CKD).
 Create n number of random test cases and determine whether the case is likely to have CKD depending on the mode of the classifications of the k number of nearest points.
@@ -66,7 +68,8 @@ A legend is generated in a reasonable position.
 mainDriver function takes in nothing and graphs both the orginial CSV file, the k number of nearest neighbors, and the test case.
 This function returns 0.
 
-# K Means Clustering Script Description: This is the most difficult part! Try to think outside of the box when programming the functions.
+# K Means Clustering Script Description: 
+# This is the most difficult part! Try to think outside of the box when programming the functions.
 
 Process and graph a CSV file containing biomedical data that relates hemoglobin levels, glucose levels, and chronic kidney disease (CKD).
 Randomly generate up to 10 centroids without issue. 
