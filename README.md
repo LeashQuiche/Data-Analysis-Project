@@ -1,12 +1,13 @@
 # Summer-2020-Data-Analysis-Project
 
-# Nearest Neighbor Classifier Script Description:
+# Nearest Neighbor Classifier Script Description
+
 *Use this to brush up on Python syntax (I reccomend Google).*
 
 Process and graph a CSV file containing biomedical data that relates hemoglobin levels, glucose levels, and chronic kidney disease (CKD).
 Create n number of random test cases and determine whether the case is likely to have CKD depending on the classification of the nearest point.
 
-# Nearest Neighbor Classifier Function Descriptions:
+# Nearest Neighbor Classifier Function Descriptions
 
 - openCSVFile function takes in no arguments and parses/organizes data from a CSV file into a 2-D numpy array with the columns being: 
 hemoglobin, glucose, classification and each row being a case.
@@ -38,13 +39,14 @@ The third column (classification) determines the color of the points.
 A randomly generated test case is graphed as a distinct point with a line connecting it to the nearest neighbor whose classification it takes on.
 A legend is generated in a reasonable position.
 
-# K Nearest Nearest Neighbor Classifier Script Description:
+# K Nearest Nearest Neighbor Classifier Script Description
+
 *Try to figure out how to do this before looking at instructions.*
 
 Process and graph a CSV file containing biomedical data that relates hemoglobin levels, glucose levels, and chronic kidney disease (CKD).
 Create n number of random test cases and determine whether the case is likely to have CKD depending on the mode of the classifications of the k number of nearest points.
 
-# K Nearest Nearest Neighbor Classifier Functions Descriptions:
+# K Nearest Nearest Neighbor Classifier Functions Descriptions
 
 - kNearestNeighbor function inputs a numpy array, a random point, and an integer k and 
 returns an array of length k which holds the indices of the k number of nearest points to the test case.
@@ -62,7 +64,8 @@ The first column (hemoglobin) is graphed as the x-axis and the second column (gl
 The third column  (classification) determines the color of the points. 
 A legend is generated in a reasonable position.
 
-# K Means Clustering Script Description: 
+# K Means Clustering Script Description
+
 *This is the most difficult part! Try to think outside of the box when programming the functions.*
 
 Process and graph a CSV file containing biomedical data that relates hemoglobin levels, glucose levels, and chronic kidney disease (CKD).
@@ -71,7 +74,7 @@ Each centroid will have a classification.
 The nearest centroid to a point will determine the point's classification (decide what to do if the distances are equal yourself).
 Create random test cases until centroids stop moving and determine whether each case is likely to have CKD depending on the classification of the nearest centroid.
 
-# K Means ClusteringClassifier Functions Descriptions:
+# K Means ClusteringClassifier Functions Descriptions
 
 - randomCentroids function takes in an integer number of clusters to be generated. 
 OR asks for k number of integer clusters
