@@ -2,7 +2,7 @@
 
 # Nearest Neighbor Classifier Script Description
 
-*Use this to brush up on Python syntax (I reccomend Google).*
+*Use this to brush up on Python syntax (I reccomend Google 🤪).*
 
 Process and graph a CSV file containing biomedical data that relates hemoglobin levels, glucose levels, and chronic kidney disease (CKD).
 Create n number of random test cases and determine whether the case is likely to have CKD depending on the classification of the nearest point.
