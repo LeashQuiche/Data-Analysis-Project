@@ -69,8 +69,8 @@ This function returns 0.
 Process and graph a CSV file containing biomedical data that relates hemoglobin levels, glucose levels, and chronic kidney disease (CKD).
 Randomly generate up to 10 centroids without issue. 
 Each centroid will have a classification. 
-The nearest centroid to a point will determine the point's classicfication (decide what to do if the distances are equal yourself).
-Create random test cases until centroids stop mocing and determine whether each case is likely to have CKD depending on the classification of the nearest centroid.
+The nearest centroid to a point will determine the point's classification (decide what to do if the distances are equal yourself).
+Create random test cases until centroids stop moving and determine whether each case is likely to have CKD depending on the classification of the nearest centroid.
 
 # K Means ClusteringClassifier Functions Descriptions:
 
@@ -90,13 +90,10 @@ updateCentroids function inputs the 2D array of centroid locations and of classi
 The average x (hemo) and y (gluc) positions of all data points for each classifications are found and
 an updated 2D array with these average cartesian points as the location for the new centroids is returned along with the original cartesian points. 
 
-iterate void function can either
-a) input information and iterate the original information until centArr ~ upCentArr
-b) don't input any information and run by itself. Similar to a main script
-The function causes for the centroids to reassign points and update the centroid until the centroids do not move.
+iterate void function inputs information and iterate the original information until centArr = upCentArr (i.e.: centroids do not move).
 
 graphClusters void function takes in a 1D and a 2D numpy array to graph. 
-The 1D array of centroid locations and classifactions have distinct points on the graph. 
+The 1D array of centroid locations and classifictions have distinct points on the graph. 
 The 2D array graphs points of normalized CSV data and colors them the same color as their corresponding centroids.
 A legend is generated in a reasonable position.
 
