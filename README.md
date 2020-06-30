@@ -6,6 +6,7 @@
 
 Process and graph a CSV file containing biomedical data that relates hemoglobin levels, glucose levels, and chronic kidney disease (CKD).
 Create n number of random test cases and determine whether the case is likely to have CKD depending on the classification of the nearest point.
+*Bonus: graph a line connecting the test case to its nearest neighbor.
 
 # Nearest Neighbor Classifier Function Descriptions
 
@@ -73,6 +74,7 @@ Randomly generate up to 10 centroids without issue.
 Each centroid will have a classification. 
 The nearest centroid to a point will determine the point's classification (decide what to do if the distances are equal yourself).
 Create random test cases until centroids stop moving and determine whether each case is likely to have CKD depending on the classification of the nearest centroid.
+*Bonus: Animate the iteration process/ save it as a gif.
 
 # K Means ClusteringClassifier Functions Descriptions
 
