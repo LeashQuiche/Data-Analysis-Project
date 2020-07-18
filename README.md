@@ -30,10 +30,11 @@ to return the distance between the two points.
 - createTestCase function creates two random test cases (hemoglobin and glucose) from 0-1 and
 creates/returns a new 1D array with the two points.
 
-- nearestNeighbor function takes in a 2D array of cartesian points and a randomly generated test case.
+- nearestNeighborIndex function takes in a 2D array of cartesian points and a randomly generated test case.
 Returns the index of the closest point in the 2D array to the test case.
 Method 1: Use indices and the distance function to create an array of points and return the index of the closest point.
 Method 2: Use KDTree *if you do this, you will not need to use the distance formula since this uses a spatial library
+Returns the index of the closest point in the 2D array to the test case.
 
 - graphNearestNeighbor void function takes in a 2D numpy array (and a cartesian 
 coordinate depending on createTestCase) and 
