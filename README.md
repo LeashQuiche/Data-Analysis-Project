@@ -90,7 +90,6 @@ OR you can have a third column with the classification value.
 
 - assignCentroids function takes in an array of normalized x (hemoglobin) and y (glucose) values from the CSV file and the randomly generated array of centroids from randomCentroids. 
 Method 1: Use shape/KD tree to determine closest point to each centroid. *This is more effective and can be a one line function. Hint: this is the opposite of the KDTree used in NearestNeighbor and kNearestNeighbor in that you want to find the centroid closest to each point instead of the point closest to a randomly generated point.
-
 Method 2: Using the findDistance function from  NearestNeighborClassifier, points are assigned the same classification as the nearest centroid.
 A 2D array of the normalized data and its classification are returned.
 
