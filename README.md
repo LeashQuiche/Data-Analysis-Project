@@ -94,8 +94,6 @@ A legend is generated in a reasonable position.
 
 *Bonus: Animate the iteration process/ save it as a gif.*
 
-![Visaul Representation of K-Means Convergence](https://github.com/awong15/Summer-2020-Data-Analysis-Project/blob/master/Visual%20Media/K-means_convergence.gif)
-
 ## K Means ClusteringClassifier Functions Descriptions
 
 - `randomCentroids` function takes in an integer number of clusters to be generated.  
@@ -124,6 +122,8 @@ The 1D array of centroid locations and classifictions have distinct points on th
 The 2D array graphs points of normalized CSV data and colors them the same color as their corresponding centroids.
 A legend is generated in a reasonable position.  
 *In order to use at least 10 colors, it may be easiest to use a color map here.*
+
+![Visual Representation of K-Means Convergence](https://github.com/awong15/Summer-2020-Data-Analysis-Project/blob/master/Visual%20Media/K-means_convergence.gif)
 
 - `dataAnalysis` void function takes in the original parsed CSV classifications and the final classifications of the data based on K-means clustering (use of centroids) and
 compares the two to find false/true positives/negatives.
