@@ -1,4 +1,5 @@
 # Nearest Neighbor Classifier: Supervised ML
+![Example of Nearest Neighbor Classifier Graph](https://github.com/awong15/Summer-2020-Data-Analysis-Project/blob/master/Visual%20Media/NNC.png)
 
 ## Nearest Neighbor Classifier Script Description
 
@@ -49,6 +50,8 @@ A legend is generated in a reasonable position.
 
 # K Nearest Neighbor Classifier: Supervised ML
 
+![Example of K Nearest Neighbor Classifier Graph](https://github.com/awong15/Summer-2020-Data-Analysis-Project/blob/master/Visual%20Media/KNNC.png)
+
 ## K Nearest Neighbor Classifier Script Description
 
 *Try to figure out how to do this before looking at instructions.*
@@ -78,7 +81,7 @@ A legend is generated in a reasonable position.
 ---
 
 # K Means Clustering: Unsupervised ML
-
+![Example of K Means Clustering Graph](https://github.com/awong15/Summer-2020-Data-Analysis-Project/blob/master/Visual%20Media/KMC.gif)
 ## K Means Clustering Script Description
 
 *This is the most difficult part! Try to think outside of the box when programming the functions.*
@@ -90,6 +93,8 @@ A legend is generated in a reasonable position.
 5. Determine whether each case is likely to have CKD depending on the classification of the nearest centroid.  
 
 *Bonus: Animate the iteration process/ save it as a gif.*
+
+![Visaul Representation of K-Means Convergence](https://github.com/awong15/Summer-2020-Data-Analysis-Project/blob/master/Visual%20Media/K-means_convergence.gif)
 
 ## K Means ClusteringClassifier Functions Descriptions
 
