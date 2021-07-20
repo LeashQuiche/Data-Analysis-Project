@@ -45,6 +45,8 @@ The third column (classification) determines the color of the points.
 A randomly generated test case is graphed as a distinct point with a line connecting it to the nearest neighbor whose classification it takes on.
 A legend is generated in a reasonable position.
 
+---
+
 # K Nearest Neighbor Classifier: Supervised ML
 
 ## K Nearest Neighbor Classifier Script Description
@@ -72,6 +74,8 @@ The 2D array contains information parsed from the CSV column.
 The first column (hemoglobin) is graphed as the x-axis and the second column (glucose) as the y-axis.
 The third column  (classification) determines the color of the points. 
 A legend is generated in a reasonable position.
+
+---
 
 # K Means Clustering: Unsupervised ML
 
