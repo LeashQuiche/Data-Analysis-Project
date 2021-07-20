@@ -7,6 +7,7 @@
 1. Process and graph a CSV file containing biomedical data that relates hemoglobin levels, glucose levels, and chronic kidney disease (CKD).
 2. Create n number of random test cases. 
 3. Determine whether the case is likely to have CKD depending on the classification of the nearest point.  
+
 *Bonus: graph a line connecting the test case to its nearest neighbor.*
 
 ## Nearest Neighbor Classifier Function Descriptions
@@ -33,8 +34,9 @@ creates/returns a new 1D array with the two points.
 
 - `nearestNeighborIndex` function takes in a 2D array of cartesian points and a randomly generated test case.
 Returns the index of the closest point in the 2D array to the test case.  
-Method 1: Use indices and the distance function to create an array of points and return the index of the closest point.  
-Method 2: Use KDTree *if you do this, you will not need to use the distance formula since this uses a spatial library
+Possible Methods:
+1. Use indices and the distance function to create an array of points and return the index of the closest point.  
+2. Use KDTree *if you do this, you will not need to use the distance formula since this uses a spatial library
 Returns the index of the closest point in the 2D array to the test case.*
 
 -  `graphNearestNeighbor` void function takes in a 2D numpy array (and a cartesian 
@@ -83,6 +85,7 @@ A legend is generated in a reasonable position.
 3. Assign each centroid will have a classification. The nearest centroid to a point will determine the point's classification (decide what to do if the distances are equal yourself).
 4. Create random test cases until centroids stop moving (literally stop updating).
 5. Determine whether each case is likely to have CKD depending on the classification of the nearest centroid.  
+
 *Bonus: Animate the iteration process/ save it as a gif.*
 
 ## K Means ClusteringClassifier Functions Descriptions
@@ -92,17 +95,18 @@ A legend is generated in a reasonable position.
 Outputs a 2D array filled with random values between 0-1. 
 The first column represents hemoglobin and the second column represents glucose.
 There are k number of rows representing the number of centroids and the classification of each centroid (i.e.: row index = classification value).  
-**OR** you can have a third column with the classification value.
+**OR** you can have a third column with the classification value.  
 *This can be a one line function
 
 - `assignCentroids` function takes in an array of normalized x (hemoglobin) and y (glucose) values from the CSV file and the randomly generated array of centroids from randomCentroids.  
-Method 1: Use shape/KD tree to determine closest point to each centroid. *This is more effective and can be a one line function. Hint: this is the opposite of the KDTree used in NearestNeighbor and kNearestNeighbor in that you want to find the centroid closest to each point instead of the point closest to a randomly generated point.  
-Method 2: Using the findDistance function from  NearestNeighborClassifier, points are assigned the same classification as the nearest centroid.
+Possible methods:
+1. Use shape/KD tree to determine closest point to each centroid. *This is more effective and can be a one line function. Hint: this is the opposite of the KDTree used in NearestNeighbor and kNearestNeighbor in that you want to find the centroid closest to each point instead of the point closest to a randomly generated point.
+2. Using the findDistance function from  NearestNeighborClassifier, points are assigned the same classification as the nearest centroid.
 A 2D array of the normalized data and its classification are returned.
 
 - `updateCentroids` function inputs the 2D array of centroid locations and of classified and normalized CSV data.
 The average x (hemo) and y (gluc) positions of all data points for each classifications are found and
-an updated 2D array with these average cartesian points as the location for the new centroids is returned along with the original cartesian points. 
+an updated 2D array with these average cartesian points as the location for the new centroids is returned along with the original cartesian points.  
 *This function has two parts: finding average x and y values and then changing the values of the 2-D centroid array*
 
 - `iterate` void function inputs information and iterate the original information until centArr = upCentArr (i.e.: centroids do not move).
@@ -111,7 +115,7 @@ an updated 2D array with these average cartesian points as the location for the 
 - `graphClusters` void function takes in a 1D and a 2D numpy array to graph. 
 The 1D array of centroid locations and classifictions have distinct points on the graph. 
 The 2D array graphs points of normalized CSV data and colors them the same color as their corresponding centroids.
-A legend is generated in a reasonable position.
+A legend is generated in a reasonable position.  
 *In order to use at least 10 colors, it may be easiest to use a color map here.*
 
 - `dataAnalysis` void function takes in the original parsed CSV classifications and the final classifications of the data based on K-means clustering (use of centroids) and
