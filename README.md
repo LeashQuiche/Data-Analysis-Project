@@ -6,7 +6,7 @@
 
 1. Process and graph a CSV file containing biomedical data that relates hemoglobin levels, glucose levels, and chronic kidney disease (CKD).
 2. Create n number of random test cases. 
-3. Determine whether the case is likely to have CKD depending on the classification of the nearest point.__
+3. Determine whether the case is likely to have CKD depending on the classification of the nearest point.  
 *Bonus: graph a line connecting the test case to its nearest neighbor.*
 
 ## Nearest Neighbor Classifier Function Descriptions
@@ -32,8 +32,8 @@ to return the distance between the two points.
 creates/returns a new 1D array with the two points.
 
 - `nearestNeighborIndex` function takes in a 2D array of cartesian points and a randomly generated test case.
-Returns the index of the closest point in the 2D array to the test case.__
-Method 1: Use indices and the distance function to create an array of points and return the index of the closest point.__
+Returns the index of the closest point in the 2D array to the test case.  
+Method 1: Use indices and the distance function to create an array of points and return the index of the closest point.  
 Method 2: Use KDTree *if you do this, you will not need to use the distance formula since this uses a spatial library
 Returns the index of the closest point in the 2D array to the test case.*
 
@@ -57,8 +57,8 @@ A legend is generated in a reasonable position.
 ## K Nearest Neighbor Classifier Functions Descriptions
 
 - `kNearestNeighbor` function inputs a numpy array, a random point, and an integer k and 
-returns an array of length k which holds the indices of the k number of nearest points to the test case.__
-Method 1: Use the findDistance function from NearestNeighborClassifier. __
+returns an array of length k which holds the indices of the k number of nearest points to the test case.  
+Method 1: Use the findDistance function from NearestNeighborClassifier.  
 Method 2: Use a KD Tree *this is the same as for NearestNeighbor, except you will be doing a query of k number of points.*
 
 - `kNNClass` function takes in an 2 arrays. One of the data and the other is a list of indices.
@@ -82,21 +82,21 @@ A legend is generated in a reasonable position.
 2. Randomly generate up to 10 centroids without issue. 
 3. Assign each centroid will have a classification. The nearest centroid to a point will determine the point's classification (decide what to do if the distances are equal yourself).
 4. Create random test cases until centroids stop moving (literally stop updating).
-5. Determine whether each case is likely to have CKD depending on the classification of the nearest centroid.__
+5. Determine whether each case is likely to have CKD depending on the classification of the nearest centroid.  
 *Bonus: Animate the iteration process/ save it as a gif.*
 
 ## K Means ClusteringClassifier Functions Descriptions
 
-- `randomCentroids` function takes in an integer number of clusters to be generated.__ 
+- `randomCentroids` function takes in an integer number of clusters to be generated.  
 **OR** asks for k number of integer clusters
 Outputs a 2D array filled with random values between 0-1. 
 The first column represents hemoglobin and the second column represents glucose.
-There are k number of rows representing the number of centroids and the classification of each centroid (i.e.: row index = classification value).__
+There are k number of rows representing the number of centroids and the classification of each centroid (i.e.: row index = classification value).  
 **OR** you can have a third column with the classification value.
 *This can be a one line function
 
-- `assignCentroids` function takes in an array of normalized x (hemoglobin) and y (glucose) values from the CSV file and the randomly generated array of centroids from randomCentroids. __
-Method 1: Use shape/KD tree to determine closest point to each centroid. *This is more effective and can be a one line function. Hint: this is the opposite of the KDTree used in NearestNeighbor and kNearestNeighbor in that you want to find the centroid closest to each point instead of the point closest to a randomly generated point.__
+- `assignCentroids` function takes in an array of normalized x (hemoglobin) and y (glucose) values from the CSV file and the randomly generated array of centroids from randomCentroids.  
+Method 1: Use shape/KD tree to determine closest point to each centroid. *This is more effective and can be a one line function. Hint: this is the opposite of the KDTree used in NearestNeighbor and kNearestNeighbor in that you want to find the centroid closest to each point instead of the point closest to a randomly generated point.  
 Method 2: Using the findDistance function from  NearestNeighborClassifier, points are assigned the same classification as the nearest centroid.
 A 2D array of the normalized data and its classification are returned.
 
