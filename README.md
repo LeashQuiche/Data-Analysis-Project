@@ -54,7 +54,7 @@ A legend is generated in a reasonable position.
 
 ## K Nearest Neighbor Classifier Script Description
 
-*Try to figure out how to do this before looking at instructions.*
+*Try to figure out how to do this before looking at function descriptions.*
 
 1. Process and graph a CSV file containing biomedical data that relates hemoglobin levels, glucose levels, and chronic kidney disease (CKD).
 2. Create n number of random test cases.
