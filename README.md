@@ -123,8 +123,9 @@ The 2D array graphs points of normalized CSV data and colors them the same color
 A legend is generated in a reasonable position.  
 *In order to use at least 10 colors, it may be easiest to use a color map here.*
 
-![Visual Representation of K-Means Convergence](https://github.com/awong15/Summer-2020-Data-Analysis-Project/blob/master/Visual%20Media/K-means_convergence.gif)
-[Source](https://commons.wikimedia.org/w/index.php?curid=59409335)
-
 - `dataAnalysis` void function takes in the original parsed CSV classifications and the final classifications of the data based on K-means clustering (use of centroids) and
 compares the two to find false/true positives/negatives.
+
+Example of k-means clustering (*the data is not from our particular project*)
+![Visual Representation of K-Means Convergence](https://github.com/awong15/Summer-2020-Data-Analysis-Project/blob/master/Visual%20Media/K-means_convergence.gif)
+[Source](https://commons.wikimedia.org/w/index.php?curid=59409335)
