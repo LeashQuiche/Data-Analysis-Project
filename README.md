@@ -1,4 +1,4 @@
-# Nearest Neighbor Classifier: Supervised ML
+# Supervised ML: Nearest Neighbor Classifier
 ![Example of Nearest Neighbor Classifier Graph](https://github.com/awong15/Summer-2020-Data-Analysis-Project/blob/master/Visual%20Media/NNC.png)
 
 ## Nearest Neighbor Classifier Script Description
@@ -48,7 +48,7 @@ A legend is generated in a reasonable position.
 
 ---
 
-# K Nearest Neighbor Classifier: Supervised ML
+# Supervised ML: K Nearest Neighbor Classifier
 
 ![Example of K Nearest Neighbor Classifier Graph](https://github.com/awong15/Summer-2020-Data-Analysis-Project/blob/master/Visual%20Media/KNNC.png)
 
@@ -80,7 +80,7 @@ A legend is generated in a reasonable position.
 
 ---
 
-# K Means Clustering: Unsupervised ML
+# Unsupervised ML: K Means Clustering
 ![Example of K Means Clustering Graph](https://github.com/awong15/Summer-2020-Data-Analysis-Project/blob/master/Visual%20Media/KMC.gif)
 ## K Means Clustering Script Description
 
